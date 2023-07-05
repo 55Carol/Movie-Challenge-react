@@ -1,4 +1,4 @@
-const options = { method: 'GET', headers: { accept: 'application/json' } };
+/*const options = { method: 'GET', headers: { accept: 'application/json' } };
 
 fetch('https://api.themoviedb.org/3/genre/movie/list?language=en', options)
     .then(response => response.json())

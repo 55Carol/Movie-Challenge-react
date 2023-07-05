@@ -1,9 +1,15 @@
+
 .Card {
-width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    align-content: flex-start;
+width: 200px;
 border-radius: 20px;
-box-shadow: 2px 2px 5px #3333;
-background-color: #3333;
+box-shadow: 2px 2px 5px #0606ea;
+background-color: #137be34b;
 padding: 10px;
 text-emphasis:center;
-border:2px solid #444;
+border:2px solid #27a0d4;
+
 }
