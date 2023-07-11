@@ -9,9 +9,10 @@ import Botones from './componentes/Botones';
 function App() {
   return (
     <div className='container'>
-      <div><Header/></div>
-      <Api />
+      <div><Header /></div>
+      <hr/>
       <Botones />
+      <Api />
     </div>
   );
   }

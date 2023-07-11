@@ -8,7 +8,7 @@ function Botones() {
             </select>
 
             <div>
-                <input type="Text"/>
+              <input type="Text" />    
             </div>
         </div>  
 

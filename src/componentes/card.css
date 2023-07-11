@@ -1,15 +1,17 @@
 
-.Card {
-    display: flex;
-    flex-wrap: wrap;
+.contenedorTarjetas {
     flex-direction:column;
     align-content: flex-start;
-width: 200px;
-border-radius: 20px;
-box-shadow: 2px 2px 5px #0606ea;
-background-color: #137be34b;
-padding: 10px;
-text-emphasis:center;
+    width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr 2fr;
+        text-align: center;
+        box-shadow: 2px 2px 5px #0606ea;
+        text-emphasis: center;
+        padding: 10px;
+        background-color: #137be34b;
+        border-radius: 20px; 
 border:2px solid #27a0d4;
-
 }
+
+

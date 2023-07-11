@@ -23,7 +23,7 @@ console.log(movies)
         getMovie();
     }, []);
     return (
-        <div>
+        <div className='contenedorTarjetas'>
             {movies ? (
                 movies.results.map((movie) => (
                     <Card key={movie.id} movie={movie}/>

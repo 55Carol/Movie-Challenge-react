@@ -10,8 +10,13 @@
   gap: 10px;
   flex-wrap: wrap;
   justify-content: center;
+  flex-direction: column;
 }
 
+hr{
+background-color:black ;
+height: 2px;
+}
 
 */responsibe*/
 

@@ -1,4 +1,11 @@
 
+.header{
+    width: ;
+align-items: center;
+    flex-direction: row;
+    padding-bottom: 0;
+}
+
 .encabezado{
 border: solid black;
 }
