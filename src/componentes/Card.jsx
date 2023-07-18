@@ -9,8 +9,8 @@ function Card({ movie }) {
         
         <div
             className="Card">
-            <h2>{movie.title}</h2>
-            <img src={"https://image.tmdb.org/t/p/w185/" + movie.poster_path} />
+            <h3 className="title"> {movie.title} </h3>
+            <img src={"https://image.tmdb.org/t/p/w185/" + movie.poster_path} className="img" />
         </div>
         
     );

@@ -1,6 +1,8 @@
 import { useEffect , useState } from 'react'; 
 import axios from 'axios';
 import Card from './Card';
+
+
 //componente principal
 function Api() {
     const apiKey = '12242c790252f2baf9162ae60d47d85c';
@@ -16,22 +18,23 @@ console.log(movies)
             }
         })
 
-        setMovie(response.data);
+     setMovie(response.data);
     }
 
     useEffect(() => {
         getMovie();
     }, []);
     return (
-        <div className='contenedorTarjetas'>
+        <div className='contenedor'>
             {movies ? (
                 movies.results.map((movie) => (
                     <Card key={movie.id} movie={movie}/>
-                    
                 ))
             ) : null}
         </div>
+
     )
+
 }
 
 export default Api;

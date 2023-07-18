@@ -1,17 +1,37 @@
 
-.contenedorTarjetas {
-    flex-direction:column;
+.img{
+    
     align-content: flex-start;
-    width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 2fr 2fr 2fr;
-        text-align: center;
-        box-shadow: 2px 2px 5px #0606ea;
-        text-emphasis: center;
-        padding: 10px;
-        background-color: #137be34b;
-        border-radius: 20px; 
-border:2px solid #27a0d4;
+    width: 200px;
+    height: 300px;
+    text-align: center;
+    box-shadow: 2px 2px 5px #0606ea;
+    text-emphasis: center;
+    padding: 10px;
+    background-color:#137be34b;
+    border-radius: 30px;
+    border: 2px solid #27a0d4;
+
+
+
+/*display:grid;
+grid-template-columns: repeat(auto-fill,230px);
+padding: 20px;
+border-radius: 20px;
+gap:40px;
+justify-content: center;
+background-color: red;*/
 }
 
+.contenedor{
+display: grid;
+grid-template-columns: repeat;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 
+.title{
+    grid-template-columns: repeat;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  position: relative;
+}

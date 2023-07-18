@@ -1,11 +1,10 @@
 
 .header{
-    width: ;
-align-items: center;
+    align-items: center;
     flex-direction: row;
-    padding-bottom: 0;
+    padding-bottom:0;
 }
 
 .encabezado{
-border: solid black;
+margin-bottom: 90px;
 }
