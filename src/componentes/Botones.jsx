@@ -2,6 +2,7 @@ import Api from './Api'
 import './botones.css'
 
 
+
 function Botones() {
     const selecMovie = async (movie) => {
         axiosMovie(movie.id)
@@ -15,15 +16,15 @@ function Botones() {
             < div >
                 <input type="Text" className="search" placeholder='buscar por nombre'
                 />
+              
 
-
-            <select className="selecYears">
+            {/*<select className="selecYears">
                 <option> Por Año </option>  
             </select>
            
             <select className="selecPopularity">
                 <option> Popularidad</option>
-            </select>
+            </select>*/}
                 <hr></hr>
             </div>
         </div>

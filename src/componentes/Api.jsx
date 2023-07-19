@@ -1,6 +1,7 @@
 import { useEffect , useState } from 'react'; 
 import axios from 'axios';
 import Card from './Card';
+import { Link } from 'react-router-dom';
 
 
 //componente principal
@@ -9,9 +10,9 @@ function Api() {
     const api = 'https://api.tmdb.org/3';
 
     const [movies, setMovie] = useState(null);
-console.log(movies)
+
     const getMovie = async()=> {
-        const response = await axios.get(`${api}/discover/movie`, {
+        const response = await axios.get(`${api}/movie/now_playing`, {
             params: {
                 api_key: apiKey,
                 page:1,
@@ -28,13 +29,14 @@ console.log(movies)
         <div className='contenedor'>
             {movies ? (
                 movies.results.map((movie) => (
-                    <Card key={movie.id} movie={movie}/>
+                    <Link key={movie.id} to={`detail/${movie.id}`}>
+                        <Card key={movie.id} movie={movie}></Card>
+                        </Link> 
                 ))
             ) : null}
         </div>
 
     )
-
 }
 
 export default Api;
